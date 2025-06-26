@@ -1,0 +1,23 @@
+import tkinter as tk
+fondo=tk.Tk()
+fondo.title("hiiii")
+fondo.geometry("700x550")
+num1=tk.Label(fondo,text="ingresa el primer numero",font=("Arial",25))
+num1.pack()
+botonnum=tk.Entry(fondo)
+botonnum.pack()
+num2=tk.Label(fondo,text="ingresa el segundo numero",font=("Arial",25))
+num2.pack()
+boton2num=tk.Entry(fondo)
+boton2num.pack()
+def summer():
+ numuno=botonnum.get()
+ numdos=boton2num.get()
+ resultado=float(numuno) + float(numdos)
+ mensaje.config(text=resultado)
+
+boton=tk.Button(fondo,text="summer",command=summer)
+boton.pack()
+mensaje=tk.Label(fondo,text="")
+mensaje.pack()
+fondo.mainloop()    

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Mexicana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #c0392b;
+            margin-bottom: 30px;
+        }
+
+        #mexicana {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .platillo {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 320px;
+        }
+
+        .platillo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .platillo img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+
+        .platillo p {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comida Mexicana</h1>
+    <div id="mexicana"> 
+        <div class="platillo">
+            <img src="./tamales.webp" alt="Tamales">
+            <p>Tamales $45</p>
+        </div>
+        <div class="platillo">
+            <img src="./pozole-5-1024x681-1.jpg" alt="Pozole">
+            <p>Pozole $50</p>
+        </div>
+    </div>
+</body>
+</html>
